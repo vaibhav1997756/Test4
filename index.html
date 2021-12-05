@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change color</title>
+</head>
+
+<body>
+    <input type="button" id="rol" value="Change colors">
+    <script>
+        let color = ['pink', 'blue', '#42ddf5', '#ec42f5', '#c2f542', '#f54278'];
+        let rol = document.getElementById('rol');
+        rol.addEventListener('click', function() {
+            let randomColor = color[Math.floor(Math.random() * color.length)];
+            document.body.style.background = randomColor;
+        });
+    </script>
+</body>
+
+</html>
